@@ -27,7 +27,7 @@ jobs:
           uses: actions/setup-node@v5
           with:
             node-version: 22
-        - run: npm ci
+        - run: npm install
         - run: npm run build
         - name: Deploy to GitHub Pages
           run: echo "Deploying to GitHub Pages."
